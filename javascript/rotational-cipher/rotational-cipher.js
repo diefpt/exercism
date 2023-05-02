@@ -5,4 +5,3 @@ export const rotate = (text, key) => {
   return text.replace(/[a-z]/g, char => String.fromCharCode(a + (char.charCodeAt(0) - a + key) % 26))
              .replace(/[A-Z]/g, char => String.fromCharCode(A + (char.charCodeAt(0) - A + key) % 26));
 }
-
